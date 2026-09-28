@@ -1,0 +1,620 @@
+@font-face {
+    font-family: Cairo;
+    src: url(../../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Tajawal;
+    src: url(../../fonts/Tajawal/Tajawal-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Cairo;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Tajawal;
+    font-weight: bold;
+}
+
+#phone-icon .btn,
+#whatsapp-icon .btn {
+    background-color: #0F62FE;
+    color: white;
+    transition: all ease 0.3s;
+    font-family: Cairo;
+    border-radius: 5px;
+    border: #0F62FE solid 2px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+#phone-icon {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 2000;
+}
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    z-index: 2000;
+}
+
+#whatsapp-icon svg,
+#phone-icon svg {
+    display: flex;
+    align-self: center;
+}
+
+
+/*--------------------------------------------------------------------------NavbarStyling------------------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #062150;
+    color: white;
+    padding: 0px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    white-space: nowrap;
+    z-index: 10001;
+}
+
+.hamburger {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    min-height: 25px !important;
+    max-height: 25px;
+    background: transparent;
+    cursor: pointer;
+    padding: 1.5%;
+}
+
+.hamburger span {
+    width: 100%;
+    border: #0F62FE solid 1px;
+    background-color: #0F62FE;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.logo {
+    width: 6rem
+}
+
+.navbar img {
+    width: 100%;
+    height: auto;
+}
+
+nav button {
+    background-color: #0F62FE;
+    padding: 8px;
+    border-radius: 7px;
+    transition: all ease 0.3s;
+    font-weight: bold;
+    border: none;
+    justify-self: end;
+    color: white;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    font-size: 14px;
+}
+
+li a:hover {
+    color: #0F62FE;
+}
+
+/* --------------------------Main Styling-------------------- */
+main {
+    display: flex;
+}
+
+main img {
+    width: 50%;
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+}
+
+main h1 {
+    color: #0F62FE;
+    font-size: 50px;
+}
+
+main p {
+    color: grey;
+}
+
+main .text-container {
+    text-align: right;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .text-container p {
+    max-width: 320px;
+}
+
+/* -----------------Cards styling---------------- */
+
+.second-div {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.second-div .card-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.second-div .card-container {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    text-align: right;
+    flex-wrap: wrap;
+}
+
+.second-div img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.second-div h3 {
+    color: #0348C9;
+    font-size: 30px;
+}
+
+.second-div .text-container h3 {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.second-div .text-container p {
+    font-size: 12px;
+}
+
+.second-div .text-container .head-svg {
+    background-color: white;
+    border-radius: 16%;
+    box-shadow: 0 10px 20px rgba(226, 232, 224, 0.5);
+    margin-top: -25px;
+    position: relative;
+    z-index: 1000;
+    padding: 4%;
+}
+
+.second-div .text-container {
+    background-color: white;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: 0 4px 12px rgba(226, 232, 224, 0.5);
+    position: relative;
+}
+
+.second-div .card {
+    flex: 0 0 17%;
+    transition: all ease 0.3s;
+    margin-top: 1%;
+    border: none;
+}
+
+.second-div .text-container {
+    transition: all ease 0.3s;
+    padding-bottom: 2%;
+
+}
+
+.second-div .card:hover {
+    transform: scale(1.1);
+}
+
+.second-div .card:hover .text-container {
+    transform: translateY(-20px);
+}
+
+.second-div ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: end;
+}
+
+.second-div .text-container p {
+    color: grey;
+}
+
+.second-div .p-container p {
+    padding: 0px 10px 0px 10px;
+}
+
+li {
+    display: flex;
+    gap: 1%;
+    flex: 1;
+    width: 95%;
+    margin-bottom: 2%;
+}
+
+li p {
+    min-width: 150px;
+    padding: 0 !important;
+    text-align: right;
+    margin: 0;
+}
+
+
+li svg {
+    min-width: 25px;
+    align-self: center;
+}
+
+.second-div .p-container svg {
+    margin-top: 4px;
+}
+
+/*----------------------------------- Top Features Styling -------------------------*/
+.top-features {
+    display: flex;
+    gap: 5%;
+    width: 90%;
+    justify-self: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgb(158 158 158 / 7%);
+    border-radius: 2%;
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+.top-features .card {
+    display: flex;
+}
+
+.top-features h5 {
+    margin-bottom: 0;
+    display: flex;
+    gap: 1%;
+}
+
+.top-features p {
+    font-size: 12px;
+}
+
+/* -----------------------------------Additional Services---------------------------------- */
+.additional-services {
+    display: flex;
+    gap: 3%;
+    margin-top: 5%;
+    width: 90%;
+    justify-self: center;
+    justify-content: center;
+    padding-bottom: 4%;
+    flex-wrap: wrap;
+}
+
+.additional-services .card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(158 158 158 / 7%);
+    padding: 1%;
+    border-radius: 2%;
+    max-width: 200px;
+}
+
+.additional-services svg {
+    align-self: center;
+}
+
+.additional-services h5 {
+    align-self: center;
+    margin: 2% 0 3% 0;
+}
+
+.additional-services .card p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+/*-------------------------------------------Footer Styling------------------------------------*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #062150;
+    color: white;
+    padding: 1rem 2rem;
+    gap: 5rem;
+    margin-top: 5%;
+}
+
+footer p,
+footer a,
+footer li {
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0F62FE;
+}
+
+footer>div {
+    flex: 1;
+}
+
+.first-group .link {
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.first-group svg {
+    align-self: center;
+}
+
+.second-group .links,
+.third-group .links {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    padding-right: 0;
+    gap: 2rem;
+}
+
+.fourth-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fourth-group img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+
+    body {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    h1,
+    .h1 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.375rem;
+        line-height: 1.3;
+        margin-bottom: 0.875rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 15px !important;
+        line-height: 1.4;
+        margin-bottom: 0.75rem;
+    }
+
+    p,
+    li,
+    span {
+        font-size: 1rem;
+        margin-bottom: 0.875rem;
+    }
+
+    small,
+    .caption,
+    .text-muted {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    input,
+    select,
+    textarea,
+    button,
+    .btn {
+        font-size: 1rem !important;
+        min-height: 48px;
+        padding: 12px 16px;
+    }
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .hamburger {
+        display: flex;
+        border: #0F62FE solid 1px;
+
+    }
+
+    .hamburger span {
+        display: flex;
+
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 57%;
+        left: 0;
+        width: 100%;
+        background-color: #0F62FE;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: 16px;
+    }
+
+    .nav-links li a:hover {
+        color: #062150 !important;
+    }
+
+    .nav-links li a {
+        transition: all ease 0.2s;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer p,
+    footer a,
+    footer li {
+        font-size: 10px;
+    }
+
+    footer .first-group .link {
+        white-space: wrap;
+    }
+
+    footer .first-group svg {
+        width: 20px !important;
+        height: 15px !important;
+        margin-bottom: 2%;
+    }
+
+    .second-group .links,
+    .third-group .links {
+        flex-direction: row;
+    }
+
+    footer .first-group,
+    footer .second-group,
+    footer .third-group {
+        width: 100%;
+    }
+
+    footer ul {
+        gap: 1rem;
+    }
+
+    /*----------------main--------------------------*/
+    main img {
+        width: 60%;
+    }
+
+    main .text-container {
+        margin-right: 5px;
+    }
+
+    main h1 {
+        font-size: 25px !important;
+    }
+
+    main p {
+        font-size: 8px;
+    }
+
+    /*------------------------top features--------------------------*/
+    .top-features h5 {
+        font-size: 12px;
+    }
+
+    .top-features svg {
+        width: 15px !important;
+    }
+
+    .top-features p {
+        font-size: 7px;
+    }
+
+    /*--------------------------second div---------------------------*/
+    .second-div .p-container p {
+        font-size: 8px !important;
+    }
+
+    .second-div li svg {
+        width: 5px !important;
+        height: 12px !important;
+        margin-top: 0 !important
+    }
+
+    /*------------------------Additional Services-------------------*/
+    .additional-services .card h5 {
+        font-size: 12px;
+    }
+
+    .additional-services .card p {
+        font-size: 7px;
+        align-self: center;
+        max-width: 120px;
+    }
+
+    .additional-services .card {
+        margin-top: 10px;
+    }
+}
