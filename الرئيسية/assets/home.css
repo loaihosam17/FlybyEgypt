@@ -62,6 +62,17 @@ h6 {
     align-self: center;
 }
 
+.box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*--------------------------------------------------------------------------NavbarStyling------------------------------------------*/
 .navbar {
     display: flex;
@@ -210,7 +221,6 @@ main .buttons {
 /* -----------------Contact Us info-------------- */
 
 /* --------------Left Section Styling--------------- */
-
 .left-section h4 {
     margin-bottom: 5px;
     font-size: 15px;
@@ -249,13 +259,13 @@ main .buttons {
 
 .left-section {
     margin-top: 5%;
-    justify-self: center;
     gap: 3%;
     align-items: end;
     display: flex;
     justify-content: center;
     width: 90%;
     flex-wrap: wrap;
+    margin-inline: auto;
 }
 
 .left-section .card {
@@ -522,7 +532,7 @@ footer>div {
 
     h1,
     .h1 {
-        font-size: 20px;
+        font-size: 30px;
         line-height: 1.25;
         margin-bottom: 1rem;
     }
@@ -656,7 +666,7 @@ footer>div {
 
     /*------------------------ main------------------------------*/
     main .text-container {
-        margin-top: 35%;
+        margin-top: 40%;
         justify-content: flex-start;
     }
 
@@ -703,6 +713,10 @@ footer>div {
     .left-section h4 {
         margin-bottom: 5px;
         font-size: 12px;
+    }
+
+    .left-section svg {
+        align-self: normal;
     }
 
     .left-section p {

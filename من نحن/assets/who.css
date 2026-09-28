@@ -57,6 +57,17 @@ h1 {
     align-self: center;
 }
 
+.box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*--------------------------------------------------------------------------NavbarStyling------------------------------------------*/
 .navbar {
     display: flex;
@@ -172,7 +183,7 @@ main .text-container p {
 /* -------------------- Second Section Styling ---------------------- */
 
 .second-section {
-    justify-self: center;
+    margin-inline: auto;
     width: 90%;
     padding: 2% 2% 2% 2%;
     display: flex;
@@ -229,14 +240,14 @@ main .text-container p {
     display: flex;
     gap: 5%;
     width: 90%;
-    justify-self: center;
+    margin-inline: auto;
 }
 
 .third-section .left-section {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
-    justify-self: center;
+    margin-inline: auto;
 }
 
 .lower-section .card {
